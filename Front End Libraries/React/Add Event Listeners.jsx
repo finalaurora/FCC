@@ -2,17 +2,17 @@ class MyComponent extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        message: ''
+        message: ""
       };
       this.handleEnter = this.handleEnter.bind(this);
       this.handleKeyPress = this.handleKeyPress.bind(this);
     }
     // change code below this line
     componentDidMount() {
-      document.addEventListener("keydown",this.handleKeyPress)
+        document.addEventListener("keydown", this.handleKeyPress);
     }
     componentWillUnmount() {
-      document.removeEventListener("keydown",this.handleKeyPress)
+        document.removeEventListener("keydown", this.handleKeyPress);
     }
     // change code above this line
     handleEnter() {
